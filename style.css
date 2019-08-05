@@ -2,6 +2,12 @@ html {
 	
 }
 
+#top_grid {
+	display: grid;
+	width: 100%;
+	height: 400px;
+	grid-template-columns: 50% 50%;
+}
 
 .section {
 	border: 3px solid coral;
