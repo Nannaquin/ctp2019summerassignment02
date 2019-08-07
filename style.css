@@ -1,15 +1,122 @@
-html {
+body {
+	background-color: #4d4d4d;
+}
+
+.container {
+	display: grid;
+	width: 98%;
+	position: relative;
+	margin: auto;
+	grid-template-areas: "prof_pic_div about_me networks"
+						 "projects projects projects"
+						 "field_title field_desc field_tech"
+						 "p1_title p1_desc p1_tech"
+						 "p2_title p2_desc p2_tech"
+						 "p3_title p3_desc p3_tech"
+						 "interests interests interests";
+	grid-template-rows: 200px auto 25px auto auto auto 200px;
+	grid-template-columns: 200px 2fr 1fr;
+}
+
+.container div {
+
+}
+
+.white {
+  color: white;	
+}
+
+.text_container {
+	padding: 8px;
+}
+
+h2 {
 	
 }
-
-#top_grid {
-	display: grid;
-	width: 100%;
-	height: 400px;
-	grid-template-columns: 50% 50%;
+.top_section {
+	border: 4px solid orange;
 }
 
-.section {
-	border: 3px solid coral;
+
+
+#prof_pic_div {
+	grid-area: prof_pic;
+}
+#prof_pic {
+	
+	max-width: 100%;
+	height: auto;
+}
+#about_me {
+	grid-area: about_me;
+}
+#networks {
+	grid-area: networks;
 }
 
+#projects {
+	grid-area: projects;
+
+}
+
+#projects h1 {
+	text-align: center;
+	text-decoration: underline;
+}
+
+.field_section {
+	border: 3px solid blue;
+}
+
+#field_title {
+	grid-area: field_title;
+	
+}
+#field_desc {
+	grid-area: field_desc;
+}
+#field_tech {
+	grid-area: field_tech;
+}
+
+.project_section {
+	border: 3px solid green;
+}
+
+#p1_title {
+	grid-area: p1_title;
+}
+#p1_desc {
+	grid-area: p1_desc;
+}
+#p1_tech {
+	grid_area: p1_tech;
+}
+
+#p2_title {
+	grid-area: p2_title;
+}
+#p2_desc {
+	grid-area: p2_desc;
+}
+#p2_tech {
+	grid_area: p2_tech;
+}
+#p3_title {
+	grid-area: p3_title;
+}
+#p3_desc {
+	grid-area: p3_desc;
+}
+#p3_tech {
+	grid_area: p3_tech;
+}
+
+.bottom_section {
+	border: 3px solid orange;
+}
+
+#interests {
+	grid-area: interests;
+	margin-top: 32px;
+}

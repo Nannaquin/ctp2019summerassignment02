@@ -1,40 +1,73 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Steven Santana's Homepage</title>
 	<link href="./style.css" type="text/css" rel="stylesheet" />
   </head>
   <body>
-  
-    <div id="top_grid">
-      <img id="profile_picture" src="prof_pic.jpg" />
-	  <div id="about_me">  
-		<h2>About Me</h2>
-		<p>Hello! I am Steven Santana, a Student of Computer Science at
+	<div class="container">
+		<div class="top_section">
+		  <img id="prof_pic" src="prof_pic.jpg" />
+		</div>
+		<div id="about_me" class="top_section text_container">  
+		  <h2 class="white">About Me</h2>
+		  <p class="white">Hello! I am Steven Santana, a Student of Computer Science at
       CUNY Hunter College.</p>
+        </div>
+		<div id="networks" class="top_section text_container">
+        <h2 class="white">Professional Networks</h2>
+		<ul class="white">
+		  <li>
+		    <a href="https://www.linkedin.com/in/steven-santana-93425192/" class="white">LinkedIn</a>
+		  </li>
+		</ul>
       </div>
-    </div>
-	
-
-    
-    <div id="projects" class="section">
-      <h2>Projects</h2>
-	  <ul>
-	    <li>Organizer Phone App</li>
-		<li>Crossword Solving Program</li>
-		<li>Spell Checker (using Dictionaries)</li>
-	  </ul>
+	  <div id="projects">
+	    <h1 class="white">Projects</h1>
+	  </div>
+	  <div id="field_title" class="field_section white">Project Title</div>
+	  <div id="field_description" class="field_section white">Description</div>
+	  <div id="field_tech" class="field_section white">Tech Used</div>
+	  <div id="p1_title" class="project_section white">Organizer App</div>
+	  <div id="p1_desc" class="project_section white text_container">
+	    <p>(IN PROGRESS) An organizer phone app aimed at individuals with ADHD, designed to maintain attention and consistent usage with a more colorful UI, and topic based classification. </p>
+	  </div>
+	  <div id="p1_tech" class="project_section white text_container">
+	    <ul>
+		  <li>Android (Android Studio)</li>
+		  <li>Java</li>
+		  <li>SQLite</li>
+		  <li>Room API</li>
+		</ul>
+	  </div>
+	  <div id="p2_title" class="project_section white">Crossword Solver</div>
+	  <div id="p2_desc" class="project_section white text_container">
+	    <p>A program made to solve crossword puzzles of a supplied format using a given collection of words to guess the correct letters for each position. Can solve puzzles with 92% average accuracy. </p>
+	  </div>
+	  <div id="p2_tech" class="project_section white tech_container">
+	    <ul>
+		  <li>C/C++</li>
+		  <li>Vectors</li>
+		</ul>
+	  </div>
+	  <div id="p3_title" class="project_section white">Spell Checker</div>
+	  <div id="p3_desc" class="project_section white text_container">
+	    <p>A program that, given a text document to check and a text document consisting of words, will use the second file to create a dictionary to check the first file against for any errors and output a list of possible solutions.
 		
-    </div>
-    
-    <div id="interests" class="section">
-      <h2>Interests</h2>
-	  <p>During time not spent working, learning, or coding, I play music in a band with my close friend (guitar, bass, drums, vocals, etc) and learn new languages (or at least attempt to).</p>
-    </div>
-    
-    <div id="networks" class="section">
-      <h2>Professional Networks</h2>
-    </div>
-    
+		The program actually creates two dictionaries, one using a C++ set, and the other using a C++ unordered set. The program's true purpose was to compare performance between the two dictionaries (using different data structures but the same solution creating methods.</p>
+	  </div>
+	  <div id="p3_tech" class="project_section white text_container">
+	  	<ul>
+		  <li>C/C++</li>
+		  <li>Ordered and Unordered Sets (Dictonaries)</li>
+		  <li>Object-oriented Programming</li>
+		</ul>
+	  </div>
+	  
+	  <div id="interests" class="bottom_section text_container">
+	    <h2 class="white">Interests</h2>
+		<p class="white">When not working or doing coding related activities, I perform music in a band (playing guitar, bass, drums, and singing), and learn new languages (currently studying Italian and Russian)</p>
+		</div>
+	</div>
+  
   </body>
 </html>
