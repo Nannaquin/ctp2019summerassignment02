@@ -125,6 +125,8 @@ h2 {
 
 @media only screen and (max-width: 480px) { }
 
+
+/*
 @media only screen and (max-width: 786px) { 
 
     html { 
@@ -170,7 +172,6 @@ h2 {
 	margin: auto;
 	grid-template-areas: "prof_pic_div about_me"
 						 "projects projects"
-						/* "field_title field_desc field_tech"*/
 						 "p1_title p1_title"
 						 "p1_desc p1_desc"
 						 "p1_tech p1_tech"
@@ -190,6 +191,7 @@ h2 {
 		border: 0px none transparent;
 	}
 }
+*/
 
 @media only screen and (max-width: 1024px) and (orientation: landscape) { }
 
