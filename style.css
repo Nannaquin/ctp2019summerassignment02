@@ -16,7 +16,7 @@ body {
 						 "p2_title p2_desc p2_tech"
 						 "p3_title p3_desc p3_tech"
 						 "interests interests interests";
-	grid-template-rows: auto auto 25px auto auto auto auto;
+	grid-template-rows: auto auto auto auto auto auto auto;
 	grid-template-columns: 200px 2fr 1fr;
 }
 
@@ -68,13 +68,13 @@ h2 {
 
 .field_section {
 	border: 3px solid blue;
+	
 }
 
 #field_title {
 	grid-area: field_title;
-	
-	
 }
+
 #field_desc {
 	grid-area: field_desc;
 }
