@@ -186,6 +186,7 @@ h2 {
 	
 	.field_section {
 		visibility: none !important;
+		border: none;
 	}
 }
 
