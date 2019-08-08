@@ -153,6 +153,7 @@ h2 {
 	
 	.field_section {
 		visibility: none !important;
+		border: 0px none transparent;
 	}
 }
 
