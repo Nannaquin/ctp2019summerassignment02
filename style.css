@@ -152,7 +152,7 @@ h2 {
     }
 	
 	.field_section {
-		visibility: none;
+		visibility: none !important;
 	}
 }
 
@@ -185,7 +185,7 @@ h2 {
     }
 	
 	.field_section {
-		visibility: none;
+		visibility: none !important;
 	}
 }
 
