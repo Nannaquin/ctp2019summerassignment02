@@ -141,6 +141,11 @@ h2 {
     html { 
 		font-size: 10px	
 	}
+	
+	#projects {
+	grid-area: projects;
+	height: 1em;
+	}
 	/*
 	.container {
 	display: grid;
