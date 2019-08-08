@@ -156,6 +156,38 @@ h2 {
 	}
 }
 
+@media only screen and (max-width: 1440px) and (orientation: portrait) { 
+
+    html { 
+		font-size: 10px
+	}
+	.container {
+	display: grid;
+	width: 98%;
+	position: relative;
+	margin: auto;
+	grid-template-areas: "prof_pic_div about_me"
+						 "projects projects"
+						/* "field_title field_desc field_tech"*/
+						 "p1_title p1_title"
+						 "p1_desc p1_desc"
+						 "p1_tech p1_tech"
+						 "p2_title p2_title"
+						 "p2_desc p2_desc"
+						 "p2_tech p2_tech"
+						 "p3_title p3_title"
+						 "p3_desc p3_desc"
+						 "p3_tech p3_tech"
+						 "interests networks";
+	grid-template-rows: 200px auto auto auto auto auto auto auto auto auto auto 200px;
+	grid-template-columns: 1fr 1fr;
+    }
+	
+	.field_section {
+		visibility: none;
+	}
+}
+
 @media only screen and (max-width: 1024px) and (orientation: landscape) { }
 
 @media only screen and (max-width: 1600px) { }
