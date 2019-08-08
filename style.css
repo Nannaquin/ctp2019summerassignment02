@@ -2,9 +2,7 @@ body {
 	background-color: #4d4d4d;
 }
 
-    html { 
-		font-size: 1em;
-	}
+
 
 .container {
 	display: grid;
@@ -130,39 +128,14 @@ h2 {
 @media only screen and (max-width: 480px) { }
 
 
-/*
+
 @media only screen and (max-width: 786px) { 
 
     html { 
 		font-size: 10px
 	}
-	.container {
-	display: grid;
-	width: 98%;
-	position: relative;
-	margin: auto;
-	grid-template-areas: "prof_pic_div about_me"
-						 "projects projects"
-						 "p1_title p1_title"
-						 "p1_desc p1_desc"
-						 "p1_tech p1_tech"
-						 "p2_title p2_title"
-						 "p2_desc p2_desc"
-						 "p2_tech p2_tech"
-						 "p3_title p3_title"
-						 "p3_desc p3_desc"
-						 "p3_tech p3_tech"
-						 "interests networks";
-	grid-template-rows: 200px auto auto auto auto auto auto auto auto auto auto 200px;
-	grid-template-columns: 1fr 1fr;
-    }
-	
-	.field_section {
-		visibility: none !important;
-		border: 0px none transparent;
-	}
 }
-
+/*
 @media only screen and ((min-width: 480px) and (max-width: 1440px) and (orientation: portrait) { 
 
     html { 
