@@ -6,7 +6,7 @@ body {
 
 .container {
 	display: grid;
-	width: 98%;
+	width: 98%; /* Orig 98% */
 	position: relative;
 	margin: auto;
 	grid-template-areas: "prof_pic_div about_me networks"
@@ -17,7 +17,7 @@ body {
 						 "p3_title p3_desc p3_tech"
 						 "interests interests interests";
 	grid-template-rows: auto auto auto auto auto auto auto;
-	grid-template-columns: 200px 2fr 1fr;
+	grid-template-columns: auto auto auto;
 }
 
 .container div {
@@ -68,6 +68,7 @@ h2 {
 
 .field_section {
 	border: 3px solid blue;
+	
 	
 }
 
