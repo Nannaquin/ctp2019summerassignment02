@@ -146,7 +146,7 @@ h2 {
 	grid-area: projects;
 	height: 1em;
 	}
-	/*
+	
 	.container {
 	display: grid;
 	width: 98%;
@@ -172,7 +172,7 @@ h2 {
 		visibility: none !important;
 		border: 0px none transparent;
 	}
-	*/
+	
 }
 
 @media only screen and (max-width: 1024px) and (orientation: landscape) { }
