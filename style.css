@@ -135,13 +135,13 @@ h2 {
 		font-size: 10px
 	}
 }
-/*
+
 @media only screen and ((min-width: 480px) and (max-width: 1440px) and (orientation: portrait) { 
 
     html { 
-		font-size: 10px
-		
+		font-size: 10px	
 	}
+	/*
 	.container {
 	display: grid;
 	width: 98%;
@@ -167,8 +167,8 @@ h2 {
 		visibility: none !important;
 		border: 0px none transparent;
 	}
+	*/
 }
-*/
 
 @media only screen and (max-width: 1024px) and (orientation: landscape) { }
 
