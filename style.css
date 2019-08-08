@@ -125,6 +125,10 @@ h2 {
 @media only screen and (max-width: 480px) { }
 
 @media only screen and (max-width: 786px) { 
+
+    html { 
+		font-size: 10px
+	}
 	.container {
 	display: grid;
 	width: 98%;
