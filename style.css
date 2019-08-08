@@ -71,6 +71,7 @@ h2 {
 #field_title {
 	grid-area: field_title;
 	
+	
 }
 #field_desc {
 	grid-area: field_desc;
@@ -136,7 +137,6 @@ h2 {
 	margin: auto;
 	grid-template-areas: "prof_pic_div about_me"
 						 "projects projects"
-						/* "field_title field_desc field_tech"*/
 						 "p1_title p1_title"
 						 "p1_desc p1_desc"
 						 "p1_tech p1_tech"
@@ -156,10 +156,11 @@ h2 {
 	}
 }
 
-@media only screen and (max-width: 1440px) and (orientation: portrait) { 
+@media only screen and ((min-width: 480px) and (max-width: 1440px) and (orientation: portrait) { 
 
     html { 
 		font-size: 10px
+		
 	}
 	.container {
 	display: grid;
