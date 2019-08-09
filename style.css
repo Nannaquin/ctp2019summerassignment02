@@ -137,6 +137,7 @@ h2 {
 
 @media only screen and (max-width: 1024px) and (orientation: landscape) { }
 
+/* Apparently doesn't register on my phone which has a width of 1440px */
 @media only screen and ((min-width: 480px) and (max-width: 1440px) and (orientation: portrait) { 
 
     html { 
