@@ -1,13 +1,14 @@
+  
 body {
 	background-color: #4d4d4d;
 }
 
 
-
 .container {
 	display: grid;
-	width: 98%; /* Orig 98% */
-	position: relative;
+	max-width: 75%;			/* <-- On larger screens it won't take up the full width --> */
+	min-width: 40%; 		/* --> On smaller screens it won't be crushed <-- */
+	padding: 10%;			/* You set it to 98% so that it wouldn't take the whole width, padding takes care of that. */
 	margin: auto;
 	grid-template-areas: "prof_pic_div about_me networks"
 						 "projects projects projects"
@@ -29,12 +30,11 @@ body {
 }
 
 .text_container {
-	padding: 8px;
+	padding: 8px;			
+	/* I reccomend that you use percentages, instead of pixels, not all screen sizes are the same.*/
+	/* I set it to 10% i think it looks good, but i'll leave that change up to you! */
 }
 
-h2 {
-	
-}
 .top_section {
 	border: 4px solid orange;
 }
@@ -43,9 +43,11 @@ h2 {
 
 #prof_pic_div {
 	grid-area: prof_pic;
+
 }
 #prof_pic {
-	
+	border-radius: 50%;		/* <--- This makes your image appear circular - Ray */
+    /* You can also use img-fluid in Bootstrap, and img-round.*/
 	max-width: 100%;
 	height: auto;
 }
@@ -89,9 +91,11 @@ h2 {
 
 #p1_title {
 	grid-area: p1_title;
+	text-align: center;
 }
 #p1_desc {
 	grid-area: p1_desc;
+	text-align: center;
 }
 #p1_tech {
 	grid_area: p1_tech;
@@ -99,18 +103,25 @@ h2 {
 
 #p2_title {
 	grid-area: p2_title;
+	text-align: center;
 }
+
 #p2_desc {
 	grid-area: p2_desc;
+	text-align: center;
 }
+
 #p2_tech {
 	grid_area: p2_tech;
 }
+
 #p3_title {
 	grid-area: p3_title;
+	text-align: center;
 }
 #p3_desc {
 	grid-area: p3_desc;
+	text-align: center;
 }
 #p3_tech {
 	grid_area: p3_tech;
@@ -118,6 +129,7 @@ h2 {
 
 .bottom_section {
 	border: 3px solid orange;
+	text-align: center;
 }
 
 #interests {
