@@ -2,94 +2,224 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Steven Santana's Professional Webpage</title>
-	<link href="./style.css" type="text/css" rel="stylesheet" />
+	<title>Steven Santana's Professional Webpage</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+		crossorigin="anonymous">
+	<!-- <link href="./style.css" type="text/css" rel="stylesheet" /> -->
   </head>
   <body>
+
 	<div class="container">
       
 	  <!-- Top Section -->
-	  <div class="top_section">
-	    <img id="prof_pic" src="prof_pic.jpg" />
+	  <div class="row" id="top_row">
+		  <div class="col-sm">
+			<img class="img-fluid rounded-circle" id="prof_pic" src="prof_pic.jpg" />
+		  </div>
+		  <div class="col-sm">
+			<h2>About Me</h2>
+			<p>Hello! I am Steven Santana, a Student of Computer Science at CUNY Hunter College.</p>
+			<br>
+			<a href="" download="">Download Resume</a>  <!-- Your gonna need to link a file to this!  -->
+			<!-- Place the file in the same directory as this project, then specify the path  -->
+		  </div>
+		  <div class="col-sm">
+			<h2>Contact Information: </h2>
+			<ul>
+			  <li>
+				<a href="https://www.linkedin.com/in/steven-santana-93425192/" target="_blank" >LinkedIn</a>
+			  </li>
+			  <li>
+				  <p>Email: stvnmsantana@gmail.com</p>
+			  </li>
+			  <li>
+				  <p>Phone no: (###) ###-####</p> 
+				  <!-- You can put your phone number here, preferably a Google voice number you don't use as often -->
+			  </li>
+			</ul>
+		  </div>
 	  </div>
-
-	  <div id="about_me" class="top_section text_container">  
-		<h2 class="white">About Me</h2>
-		<p class="white">Hello! I am Steven Santana, a Student of Computer Science at
-      CUNY Hunter College.</p>
-      	<br>
-      	<a href="" download="">Download Resume</a>  <!-- Your gonna need to link a file to this!  -->
-      	<!-- Place the file in the same directory as this project, then specify the path  -->
-      </div>
-	  <div id="networks" class="top_section text_container">
-        <h2 class="white">Contact Information: </h2>
-		<ul class="white">
-		  <li>
-		    <a href="https://www.linkedin.com/in/steven-santana-93425192/" class="white" target="_blank" >LinkedIn</a>
-		  </li>
-		  <li>
-		  	<p>Email: stvnmsantana@gmail.com</p>
-		  </li>
-		  <li>
-		  	<p>Phone no: (###) ###-####</p> 
-		  	<!-- You can put your phone number here, preferably a Google voice number you don't use as often -->
-		  </li>
-		</ul>
-      </div>
+	</div>
 	  
 	  <!-- Projects Section-->
-	  <div id="projects">
-	    <h1 class="white">Projects</h1>
+	  <div class="container">
+		  <div class="row justify-content-center">
+			<h1>Projects</h1>
+		  </div>
 	  </div>
-	  <div id="field_title" class="field_section white">Project Title</div>
-	  <div id="field_description" class="field_section white">Description</div>
-	  <div id="field_tech" class="field_section white">Technology Utilized</div>
-	  <div id="p1_title" class="project_section white">Organizer App</div>
-	  <div id="p1_desc" class="project_section white text_container">
-	    <p>(IN PROGRESS) An organizer phone app aimed at individuals with ADHD, designed to maintain attention and consistent usage with a more colorful UI, and topic based classification. </p>
-	  </div>
-	  <div id="p1_tech" class="project_section white text_container">
-	    <ul>
-		  <li>Android (Android Studio)</li>
-		  <li>Java</li>
-		  <li>SQLite</li>
-		  <li>Room API</li>
-		</ul>
-	  </div>
-	  <div id="p2_title" class="project_section white">Crossword Solver</div>
-	  <div id="p2_desc" class="project_section white text_container">
-	    <p>A program made to solve crossword puzzles of a supplied format using a given collection of words to guess the correct letters for each position. Can solve puzzles with 92% average accuracy. </p> <br><br>
+	  <div class="container">
+		  <!-- Column Headers-->
+		  <div class="row">
+			<div class="col-sm">
+			  <h4>Project Title</h4>
+			</div>
+			<div class="col-sm">
+			  <h4>Description</h4>
+			</div>
+			<div class="col-sm">
+			  <h4>Technology Utilized</h4>
+			</div>
+		  </div>
+		  <!-- Shopping Genie-->
+		  <div class="row">
+		  	<div class="col-sm">
+			  <h5>Shopping Genie</h5>
+			</div>
+			<div class="col-sm">
+			  <p>A full stack web application designed to help shoppers save time researching online by aggregating prices and providing predictions.
+				  <br><br>
+				My role in this project was designing, implementing, and maintaining our database, while implementing and refining our data acquisition methods. 
+				  <br><br>
+				This was perhaps one of my favorite projects to work on as there was never a dull moment regarding challenges, and my team was solid as well.
+			  </p>
+			  <a href="https://github.com/alialmashhadani89/Shopping-Genie" target="_blank">Github Repo</a>
+			</div>
+			<div class="col-sm">
+			  <ul>
+				  <li>Python</li>
+				  <li>JavaScript</li>
+				  <li>Back-End:
+					  <ul>
+						  <li>Flask</li>
+						  <li>MySQL</li>
+						  <li>Keras</li>
+						  <li>TensorFlow</li>
+						  <li>BeautifulSoup</li>
+					  </ul>
+				  </li>
+				  <li>Front-End:
+					<ul>
+						<li>Node.js</li>
+						<li>React.js</li>
+					</ul>
+				</li>
+			  </ul>
+			</div>
+		  </div>
+
+		  <!-- Perfect Pantry -->
+		  <div class="row">
+			<div class="col-sm">
+			  <h5>Perfect Pantry</h5>
+			</div>
+			<div class="col-sm">
+				<p>(In development) A full stack web application that stores users ingredients in a virtual pantry, tracks their expiration dates, and suggests recipes based upon a user's inventory.
+					<br><br>
+					My role in this project was mainly back end oriented: I helped design the database schema, and implemented the user authentication, several api routes, and helped trouble shoot some front end issues.
+					<br><br>
+					I loved approaching the problems presented in designing and developing such a product, and how involved I was able to be with all my team members and their work. We worked hard for what time we had. 
+				</p>
+			</div>
+			<div class="col-sm">
+			  <ul>
+				<li>JavaScript</li>
+				<li>Node.js</li>
+				<li>Back-End:
+				  <ul>
+					<li>Express.js</li>
+					<li>Sequelize.js</li>
+					<li>SQLite</li>
+					
+				  </ul>
+				</li>
+				<li>Front-End:
+				  <ul>
+					<li>React.js</li>
+				  </ul>
+				</li>
+			  </ul>
+			</div>
+		  </div>
+		  <!-- Virtual Stock Trading Pantry -->
+		  <div class="row">
+			<div class="col-sm">
+			  <h5>Virtual Stock Platform</h5>
+			</div>
+			<div class="col-sm">
+					Description
+			</div>
+			<div class="col-sm">
+					Technology Utilized
+			</div>
+		  </div>
+		  <!-- Organizer Row -->
+		  <div class="row">
+			<div class="col-sm">
+			  <h5>TrueOrganizer Phone App</h5>
+			</div>
+			<div class="col-sm">
+			  <p>(IN PROGRESS) An organizer phone app aimed at individuals with ADHD, designed to maintain attention and consistent usage with a more colorful UI, and topic based classification. </p>
+			</div>
+			<div class="col-sm">
+			  <ul>
+				<li>Android (Android Studio)</li>
+				<li>Java</li>
+				<li>SQLite</li>
+				<li>Room API</li>
+			  </ul>
+			</div>
+		  </div>
+		  <!-- Crossword Row -->
+		  <div class="row">
+			<div class="col-sm">
+		      <h5>Crossword Solver</h5>
+			</div>
+			<div class="col-sm">
+			  <p>A program made to solve crossword puzzles of a supplied format using a given collection of words to guess the correct letters for each position. Can solve puzzles with 92% average accuracy. </p>
+			</div>
+			<div class="col-sm">
+			  <ul>
+			    <li>C/C++</li>
+				<li>Vectors</li>
+		      </ul>
+			</div>
+		  </div>
+
+		  <!-- Spell Checker Row-->
+		  <div class="row">
+			<div class="col-sm">
+			  <h5>Spell Checker</h5>
+			</div>
+			<div class="col-sm">
+			  <p>A program that, given a text document to check and a text document consisting of words, will use the second file to create a dictionary to check the first file against for any errors and output a list of possible solutions.
 		
-		<a href="https://github.com/Nannaquin/csci135-project-2" class="white" target="_blank">Github Repo</a>
+				 The program actually creates two dictionaries, one using a C++ set, and the other using a C++ unordered set. The program's true purpose was to compare performance between the two dictionaries (using different data structures but the same solution creating methods.</p> <br><br>
+					
+			  <a href="https://github.com/Nannaquin/csci335hp3" target="_blank">Github Repo</a>
+			</div>
+			<div class="col-sm">
+			  <ul>
+				<li>C/C++</li>
+				<li>Ordered and Unordered Sets (Dictonaries)</li>
+				<li>Object-oriented Programming</li>
+			  </ul>
+			</div>
+		  </div>
 	  </div>
-	  <div id="p2_tech" class="project_section white tech_container">
-	    <ul>
-		  <li>C/C++</li>
-		  <li>Vectors</li>
-		</ul>
-	  </div>
-	  <div id="p3_title" class="project_section white">Spell Checker</div>
-	  <div id="p3_desc" class="project_section white text_container">
-	    <p>A program that, given a text document to check and a text document consisting of words, will use the second file to create a dictionary to check the first file against for any errors and output a list of possible solutions.
-		
-		The program actually creates two dictionaries, one using a C++ set, and the other using a C++ unordered set. The program's true purpose was to compare performance between the two dictionaries (using different data structures but the same solution creating methods.</p> <br><br>
-		
-		<a href="https://github.com/Nannaquin/csci335hp3" class="white" target="_blank">Github Repo</a>
-	  </div>
-	  <div id="p3_tech" class="project_section white text_container">
-	  	<ul>
-		  <li>C/C++</li>
-		  <li>Ordered and Unordered Sets (Dictonaries)</li>
-		  <li>Object-oriented Programming</li>
-		</ul>
+
+	  <!-- Bottom Section -->
+	  <div class="container">
+		  <div class="row justify-content-center">
+			<h2>Interests</h2>
+		  </div>
+		  <div class="row">
+			<p>When not working or doing coding related activities, I perform music in a band (playing guitar, bass, drums, and singing), and learn new languages (currently studying Italian and Russian)</p>
+		  </div>
 	  </div>
 	  
-	  <!-- Bottom Section -->
-	  <div id="interests" class="bottom_section text_container">
-	    <h2 class="white">Interests</h2>
-		<p class="white">When not working or doing coding related activities, I perform music in a band (playing guitar, bass, drums, and singing), and learn new languages (currently studying Italian and Russian)</p>
-		</div>
-	</div>
-  
+	  
+
+
+	
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" 
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" 
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" 
+		crossorigin="anonymous"></script>
   </body>
 </html>
